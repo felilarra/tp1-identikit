@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body: SELECTOR DE TIPO */
+body {
+    background-color: #000814;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-image: url(src/fondo.png);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #003566;
+    text-align: right;
+    font-size: 14px;
+}
+
+#menu li {
+    display: inline-block;
+}
+
+#menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+#menu li a:hover {
+    background-color: #111;
+    color: #ffd60a;
+}
+
+#menu {
+    margin-bottom: 25px;
+}
+
+/* #seccion1: SELECTOR DE ID */
+#seccion1 {
+    height: fit-content;
+}
+
+#bienvenida {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#foto {
+    width: 320px;
+}
+
+/* .gold: SELECTOR DE CLASE */
+.gold {
+    color: #ffd60a;
+    font-size: 20px;
+}
+
+p {
+    color: #ffc300;
+}
+
+#imagenes img {
+    display: inline;
+    width: 70px;
+}
+
+
+/* about.html */
+#historia {
+    float: left;
+}
+
+#historia div {
+    text-align: left;
+    width: 75%;
+    float: left;
+}
+
+#historia p {
+    font-size: 18px;
+}
+
+#historia img {
+    width: 20%;
+    float: right;
+    border-radius: 5px;
+}
+
+#historia,
+#experiencia_laboral {
+    background-color: #001d3d;
+    margin: 2% 10%;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#experiencia_laboral {
+    float: right;
+    text-align: left;
+}
+
+#experiencia_laboral ul {
+    font-size: 18px;
+}
+
+#historia h2,
+#historia p,
+#experiencia_laboral h2,
+#experiencia_laboral h4,
+#experiencia_laboral ul {
+    margin: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#historia h2 {
+    margin-bottom: 20px;
+}
+
+.periodo {
+    font-size: 20px;
+}
+
+.empresa {
+    font-size: 24px;
+}
+
+#experiencia_laboral h2 {
+    margin-bottom: 20px;
+}
+
+#experiencia_laboral .texto {
+    float: left;
+    width: 85%;
+    margin-left: 10px;
+
+}
+
+#experiencia_laboral ul li {
+    font-size: 20px;
+    color: #ffc300;
+    margin-left: 2%;
+}
+
+#img_farmacia,
+#img_feedback {
+    float: right;
+    width: 12%;
+    margin-top: 50px;
+
+}
+
+.clear {
+    clear: both;
+}
+
+.bloque {
+    margin-bottom: 40px;
+}
+
+#tabla_materias {
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 3px dashed white;
+    width: 90%;
+}
+
+#tabla_materias th,
+#tabla_materias td {
+    border: 1px solid #ffc300;
+    padding: 10px;
+}
+
+#tabla_materias th {
+    background-color: #003566;
+}
+
+#tabla_materias td {
+    background-color: #001d3d;
+}
+
+#body_tabla {
+    background-image: url("src/monserrat.jpg");
+    background-size: fill;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
