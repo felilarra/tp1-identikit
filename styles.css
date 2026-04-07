@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Trykker&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +10,7 @@
 body {
     background-color: #000814;
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Trykker", sans-serif;
     text-align: center;
     background-image: url(src/fondo.png);
     background-size: cover;
@@ -25,6 +27,7 @@ body {
     background-color: #003566;
     text-align: right;
     font-size: 14px;
+    font-family: "Mulish", sans-serif;
 }
 
 #menu li {
@@ -48,14 +51,28 @@ body {
     margin-bottom: 25px;
 }
 
+#body_trivia #menu {
+    margin: 0;
+}
+
 /* #seccion1: SELECTOR DE ID */
 #seccion1 {
     height: fit-content;
 }
 
-#bienvenida {
-    text-decoration: underline;
+h1 {
+    font-family: "Mitr", sans-serif;
+    font-weight: 500;
+}    
+
+h2 {
+    font-family: "Mulish", sans-serif;
     font-weight: bold;
+    font-size: 20px;
+}
+
+#bienvenida {
+    font-size: 22px;
 }
 
 #foto {
@@ -63,20 +80,28 @@ body {
 }
 
 /* .gold: SELECTOR DE CLASE */
-.gold {
+#frase {
     color: #ffd60a;
     font-size: 20px;
+    font-family: "Mulish", sans-serif;
+}
+
+#link {
+    color: #ffd60a;
 }
 
 p {
     color: #ffc300;
 }
 
+#seccion2 h2 {
+    font-family: "Mulish", sans-serif;
+}
+
 #imagenes img {
     display: inline;
     width: 70px;
 }
-
 
 /* about.html */
 #historia {
@@ -122,7 +147,6 @@ p {
 #experiencia_laboral h4,
 #experiencia_laboral ul {
     margin: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 #historia h2 {
@@ -186,16 +210,151 @@ p {
 
 #tabla_materias th {
     background-color: #003566;
+    font-family: "Mulish", sans-serif;
 }
 
 #tabla_materias td {
     background-color: #001d3d;
 }
 
-#body_tabla {
-    background-image: url("src/monserrat.jpg");
-    background-size: fill;
+/* Estilos para trivia */
+.body_preguntas {
+    background-color: #000814;
+    color: white;
+    font-family: "Trykker", sans-serif;
+    text-align: center;
+    background-image: url(src/fondo.png);
+    background-size: cover;
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.h1preguntas {
+    font-family: "Mitr", sans-serif;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.opcion {
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px;
+    padding: 30px 15px 15px 15px;
+    background-color: #003566;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 180px;
+    height: 200px;
+    text-align: center;
+}
+
+.opcion:hover {
+    background-color: #ffd60a;
+    color: #000814;
+}
+
+.opcion img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #ffc300;
+    object-fit: cover;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #ffd60a;
+    color: #003566;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: "Mulish", sans-serif;
+}
+
+.boton:hover {
+    background-color: #ffc300;
+}
+
+#body_tabla {
+    background-image: url("src/monserrat.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#h1trivia {
+    color: #ffd60a;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+#bombonera {
+    margin: 30px 0;
+    width: 400px;
+    border-radius: 10px;
+}
+
+#jugar {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    background-color: #ffd60a;
+    color: #003566;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: "Mulish", sans-serif;
+}
+
+#jugar:hover {
+    background-color: #ffc300;
+}
+
+#h2trivia {
+    font-family: "Mulish", sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.body_preguntas {
+    height: 100vh;
+}
+
+.body_preguntas h2 {
+    font-family: "Mulish", sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 50px;
+}
+
+.correcta_p, .incorrecta_p {
+    font-size: 14px;
+    color: #ffd60a;
+    margin-bottom: 30px;
+}
+
+.h1preguntas {
+    margin-top: 50px;
+    font-size: 3em;
+    color: #ffd60a;
+}
+
+.correcta, .incorrecta {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.correcta {
+    color: #00ff00;
+}
+
+.incorrecta {
+    color: #ff0000;
+
 }
