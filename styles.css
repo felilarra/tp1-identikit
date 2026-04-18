@@ -17,6 +17,7 @@ body {
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #menu ul {
@@ -63,7 +64,7 @@ body {
 h1 {
     font-family: "Mitr", sans-serif;
     font-weight: 500;
-}    
+}
 
 h2 {
     font-family: "Mulish", sans-serif;
@@ -86,12 +87,12 @@ h2 {
     font-family: "Mulish", sans-serif;
 }
 
-#link {
-    color: #ffd60a;
-}
-
 p {
     color: #ffc300;
+}
+
+#seccion2 {
+    margin-top: 50px;
 }
 
 #seccion2 h2 {
@@ -186,17 +187,17 @@ p {
 
 }
 
-.clear {
-    clear: both;
-}
-
 .bloque {
     margin-bottom: 40px;
 }
 
+#div_tabla {
+    height: 489px;
+}
+
 #tabla_materias {
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 50px;
     border-radius: 5px;
     border: 3px dashed white;
     width: 90%;
@@ -225,7 +226,6 @@ p {
     text-align: center;
     background-image: url(src/fondo.png);
     background-size: cover;
-    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     padding: 20px;
@@ -283,15 +283,16 @@ p {
 
 #body_tabla {
     background-image: url("src/monserrat.jpg");
-    height: 100vh;
     background-position: center;
-    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #h1trivia {
     color: #ffd60a;
     font-size: 3em;
     margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 #bombonera {
@@ -302,7 +303,7 @@ p {
 
 #jugar {
     padding: 15px 30px;
-    font-size: 1.2em;
+    font-size: 20px;
     border: none;
     background-color: #ffd60a;
     color: #003566;
@@ -310,6 +311,7 @@ p {
     border-radius: 10px;
     font-weight: bold;
     font-family: "Mulish", sans-serif;
+    margin-top: 30px;
 }
 
 #jugar:hover {
@@ -319,22 +321,19 @@ p {
 #h2trivia {
     font-family: "Mulish", sans-serif;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 20px;
     margin-bottom: 30px;
-}
-
-.body_preguntas {
-    height: 100vh;
 }
 
 .body_preguntas h2 {
     font-family: "Mulish", sans-serif;
-    font-size: 1.2em;
+    font-size: 20px;
     margin-bottom: 50px;
 }
 
-.correcta_p, .incorrecta_p {
-    font-size: 14px;
+.correcta_p,
+.incorrecta_p {
+    font-size: 16px;
     color: #ffd60a;
     margin-bottom: 30px;
 }
@@ -345,8 +344,9 @@ p {
     color: #ffd60a;
 }
 
-.correcta, .incorrecta {
-    font-size: 2em;
+.correcta,
+.incorrecta {
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
@@ -360,9 +360,10 @@ p {
 }
 
 /* video.html */
-.aside, #main {
+.aside,
+#main {
     display: inline-block;
-    vertical-align: top;    
+    vertical-align: top;
 }
 
 .aside {
@@ -374,11 +375,12 @@ p {
     border: 3px solid white;
     padding-top: 20px;
     padding-bottom: 50px;
+    margin-top: 110px;
 }
 
 .aside li {
     padding-top: 30px;
-    
+
 }
 
 .aside li a {
@@ -409,6 +411,14 @@ p {
     color: #ffd60a;
 }
 
+#tv_bostera {
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 3px solid white;
+    border-radius: 10px;
+    width: 560px;
+    height: 315px;
+}
 
 #main iframe {
     margin-top: 50px;
@@ -416,19 +426,28 @@ p {
     border-radius: 10px;
 }
 
+#tv_bostera,
+iframe {
+    margin-bottom: 17vh;
+}
 
 /* footer */
 footer {
-    background-color: #001d3d;
+    clear: both;
+    background-color: #003566;
     color: #fff;
     text-align: center;
     font-family: "Mulish", sans-serif;
-    height: 50px;
+    height: 30px;
+
     margin-top: 50px;
-    
 }
 
 footer p {
-    line-height: 50px;
     font-size: 14px;
+    padding-top: 5px;
+}
+
+#footer_trivia {
+    margin-top: 21.3vh;
 }
